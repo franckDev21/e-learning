@@ -1,0 +1,12 @@
+.banner{
+  position: relative;
+
+  &__img{
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    background-image: url("./home_banner.avif");
+    background-position: center;
+    background-size: cover;
+  }
+}

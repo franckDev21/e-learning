@@ -1,0 +1,22 @@
+.about-section{
+  &__img{
+    & > img{
+      transition: transform .4s ease-in-out;
+    }
+    &:hover{
+      & > img{
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.temoignage-section{
+  &__img{
+    width: 340px;
+    height: 340px;
+    background-image: url("./calange.avif");
+    background-position: center;
+    background-size: cover;
+  }
+}
