@@ -57,21 +57,15 @@ const Home: FC<HomeProps> = () => {
         </div>
       </div>
 
+
       <div className="py-10 shadow formation-section">
-        <div className="container mx-auto py-10 flex justify-center items-start">
-          <div className="w-1/2 mr-4">
-            <span className="bg-violet-600 w-10/12 text-white px-2 py-1 text-4xl font-bold">Des formations innovantes</span> 
+        <div className="container mx-auto py-10 flex justify-start items-start">
+          <h1 style={{color: '#003667'}}  className="mb-2 text-3xl font-semibold">
+            <span className="h-1 bg-orange-400 rounded-lg w-10 block mb-2"></span>
 
-            <p className="leading-8 mt-6  w-10/12">
-              Devenez qui vous voulez être avec <span className="uppercase underline text-purple-600">Digital College</span>. Choisissez votre carrière. <span className="underline">Suivez une formation constituée de projets professionnalisants</span> et de séances individuelles avec un mentor dédié chaque semaine. Obtenez un diplôme reconnu par l'État. Enrichissez votre CV avec les programmes en alternance proposés par OpenClassrooms et gagnez un salaire tout en suivant votre formation.
-            </p>
-
-            <button className="px-4 py-3 mt-5 rounded-md text-purple-600 border-2 uppercase text-sm font-semibold border-purple-600">voir toute nos formations </button>
-          </div>
-          <div className=" h-96 bg-gradient-to-r cursor-pointer flex justify-center items-center from-gray-400 to-gray-300 w-full max-w-xl">
-            <AiFillPlayCircle color="#003667aa" size={80} />
-          </div>
+            Les étudiants <span className="souligne">consultent</span></h1>
         </div>
+        
       </div>
 
       <div className="py-20 bg-white temoignage-section">

@@ -8,6 +8,7 @@ import { GrPersonalComputer } from 'react-icons/gr';
 import { AiOutlineAndroid,AiOutlineComment,AiFillSound } from 'react-icons/ai';
 import { FaDesktop } from 'react-icons/fa';
 import { BiBuildings } from 'react-icons/bi';
+import Logo from "../../assets/images/logo.png";
 
 import "./index.scss";
 
@@ -66,10 +67,12 @@ const Header: FC<HeaderProps> = () => {
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <div className="-translate-y-2 cursor-pointer">
-            <Link to="/" className="logo uppercase font-semibold text-2xl" style={{color: '#003667'}} >
+            <img src={Logo} width={100} className='rounded-md translate-y-2' alt="logo" />
+
+            {/* <Link to="/" className="logo uppercase font-semibold text-2xl" style={{color: '#003667'}} >
             <span className="text-purple-600 text-4xl">D</span>IGITAL<span className="text-purple-600 text-4xl">.</span>COLLEGE
             </Link>
-            <span className="text-sm block text-gray-500">La formation de qualité pour tous </span>
+            <span className="text-sm block text-gray-500">La formation de qualité pour tous </span> */}
           </div>
 
           <div onClick={(e) => showOverlyFormations() } className="ml-10 flex items-end cursor-pointer py-2 px-3 rounded-md hover:bg-purple-50 bg-opacity-30">
@@ -90,7 +93,7 @@ const Header: FC<HeaderProps> = () => {
           </div>}
 
           <span onClick={() => setShowSearchBar(step => !step)} className="cursor-pointer"><ImSearch size={23} /></span>
-          <Link to='/auth' className="ml-6 transition-all hover:bg-purple-100 px-4 py-2 rounded-md uppercase text-sm font-semibold border-2 border-purple-400 text-purple-500">se connecter</Link>
+          <Link to='/auth' className="ml-6 transition-all hover:bg-orange-50 px-4 py-2 rounded-md uppercase text-sm font-semibold border-2 border-orange-400 text-orange-500">se connecter</Link>
         </div>
       </div>
 
