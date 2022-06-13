@@ -43,7 +43,7 @@ const AuthLayout: FC<AuthLayoutProps> = ({ children }) => {
   return (
     <div className="flex min-h-screen overflow-hidden  bg-gray-100">
       <div className="w-1/2">
-        <div className="flex justify-center items-center flex-col min-h-screen bg-gradient-to-r from-violet-500 to-violet-500">
+        <div className="flex justify-center items-center flex-col min-h-screen " style={{backgroundColor: '#003667'}}>
           <div className="pl-5">
             {/* <Link to="/" className="logo uppercase font-semibold text-2xl" style={{color: '#003667'}} >
               <img style={{width: 250, height: 'auto'}} className="mt-4 rounded-lg h-60 " src={Logo} alt="logo" />
@@ -98,7 +98,7 @@ const AuthLayout: FC<AuthLayoutProps> = ({ children }) => {
             </div>
 
             <div className="text-center flex items-center justify-center mt-6">
-              <button className="mx-1 opacity-90 px-10 py-4 active:scale-95 rounded-md font-bold uppercase  bg-violet-600 text-white">
+              <button className="mx-1 opacity-90 px-10 py-4 active:scale-95 rounded-md font-bold uppercase  bg-orange-600 text-white">
                 {mode === 'LOGIN' ? "S'inscrire" : "Se connecter"} {loard && <span className="load"></span>}
               </button>
             </div>

@@ -70,26 +70,26 @@ const Header: FC<HeaderProps> = () => {
             <img src={Logo} width={100} className='rounded-md translate-y-2' alt="logo" />
 
             {/* <Link to="/" className="logo uppercase font-semibold text-2xl" style={{color: '#003667'}} >
-            <span className="text-purple-600 text-4xl">D</span>IGITAL<span className="text-purple-600 text-4xl">.</span>COLLEGE
+            <span className="text-orange-600 text-4xl">D</span>IGITAL<span className="text-orange-600 text-4xl">.</span>COLLEGE
             </Link>
             <span className="text-sm block text-gray-500">La formation de qualité pour tous </span> */}
           </div>
 
-          <div onClick={(e) => showOverlyFormations() } className="ml-10 flex items-end cursor-pointer py-2 px-3 rounded-md hover:bg-purple-50 bg-opacity-30">
+          <div onClick={(e) => showOverlyFormations() } className=" header__link ml-10 flex items-end cursor-pointer py-2 px-3 rounded-md hover:bg-orange-50 bg-opacity-30">
             <Link to='/' className="font- mr-3" >Formations</Link>
             <span className="w-4 h-4 -translate-y-0.5"> 
               {!showFormationOverline ? <VscTriangleDown size={14} /> : <VscTriangleUp size={14} />} 
             </span>
           </div>
           <span style={{width: 1}} className="h-6 bg-gray-300 mx-4"></span>
-          <div onClick={(e) => showOverlyProgramme()} className="flex items-end cursor-pointer py-2 px-3 rounded-md hover:bg-purple-50 bg-opacity-30">
+          <div onClick={(e) => showOverlyProgramme()} className=" header__link flex items-end cursor-pointer py-2 px-3 rounded-md hover:bg-orange-50 bg-opacity-30">
             <Link to='/' className="">Programmes</Link>
           </div>
         </div>
         <div className="flex items-center  w-1/2 justify-end">
 
           {showSearchBar && <div className="bg-gray-100 rounded-md  w-3/5 mr-3">
-            <input type="text" placeholder="Rechercher un cour ou une formation ..." className="px-3 py-2 w-full rounded-md  h-auto bg-transparent focus:ring-1  focus:border-1 focus:ring-purple-400 focus:outline-none" />
+            <input type="text" placeholder="Rechercher un cour ou une formation ..." className="px-3 py-2 w-full rounded-md  h-auto bg-transparent focus:ring-1  focus:border-1 focus:ring-orange-400 focus:outline-none" />
           </div>}
 
           <span onClick={() => setShowSearchBar(step => !step)} className="cursor-pointer"><ImSearch size={23} /></span>
@@ -107,8 +107,8 @@ const Header: FC<HeaderProps> = () => {
           </div>
           <div className="ml-5 grid grid-cols-2 gap-4 justify-start items-center">
 
-            <div className="header__card py-3 px-6 max-w-sm rounded-lg cursor-pointer flex items-start justify-start hover:bg-purple-100" onClick={(e) => {e.currentTarget.classList.toggle('active')}} >
-              <span className="w-8 text-purple-600 h-8 bg-purple-100 rounded-full flex-none mr-3 flex justify-center items-center">
+            <div className="header__card py-3 px-6 max-w-sm rounded-lg cursor-pointer flex items-start justify-start hover:bg-orange-100" onClick={(e) => {e.currentTarget.classList.toggle('active')}} >
+              <span className="w-8 text-orange-600 h-8 bg-orange-100 rounded-full flex-none mr-3 flex justify-center items-center">
                 <IoSchoolSharp />
               </span>
               <div className="">
@@ -117,8 +117,8 @@ const Header: FC<HeaderProps> = () => {
               </div>
             </div>
 
-            <div className="header__card py-3 px-6 max-w-sm rounded-lg cursor-pointer flex items-start justify-start hover:bg-purple-100" >
-              <span className="w-8 text-purple-600 h-8 bg-purple-100 rounded-full flex-none mr-3 flex justify-center items-center">
+            <div className="header__card py-3 px-6 max-w-sm rounded-lg cursor-pointer flex items-start justify-start hover:bg-orange-100" >
+              <span className="w-8 text-orange-600 h-8 bg-orange-100 rounded-full flex-none mr-3 flex justify-center items-center">
                 <ImBook />
               </span>
               <div className="">
@@ -143,8 +143,8 @@ const Header: FC<HeaderProps> = () => {
           </div>
           <div className="ml-5 grid grid-cols-2 gap-4 justify-start items-center">
 
-            <div className="header__card py-3 px-6 max-w-sm rounded-lg cursor-pointer flex items-start justify-start hover:bg-purple-100" onClick={(e) => {e.currentTarget.classList.toggle('active')}} >
-              <span className="w-8 text-purple-600 h-8 bg-purple-100 rounded-full flex-none mr-3 flex justify-center items-center">
+            <div className="header__card py-3 px-6 max-w-sm rounded-lg cursor-pointer flex items-start justify-start hover:bg-orange-100" onClick={(e) => {e.currentTarget.classList.toggle('active')}} >
+              <span className="w-8 text-orange-600 h-8 bg-orange-100 rounded-full flex-none mr-3 flex justify-center items-center">
                 <FaDesktop  />
               </span>
               <Link to='/programme/informatique' className="">
@@ -153,8 +153,8 @@ const Header: FC<HeaderProps> = () => {
               </Link>
             </div>
 
-            <div className="header__card py-3 px-6 max-w-sm rounded-lg cursor-pointer flex items-start justify-start hover:bg-purple-100" >
-              <span className="w-8 text-purple-600 h-8 bg-purple-100 rounded-full flex-none mr-3 flex justify-center items-center">
+            <div className="header__card py-3 px-6 max-w-sm rounded-lg cursor-pointer flex items-start justify-start hover:bg-orange-100" >
+              <span className="w-8 text-orange-600 h-8 bg-orange-100 rounded-full flex-none mr-3 flex justify-center items-center">
                 <AiOutlineAndroid  />
               </span>
               <div className="">
@@ -163,8 +163,8 @@ const Header: FC<HeaderProps> = () => {
               </div>
             </div>
 
-            <div className="header__card py-3 px-6 max-w-sm rounded-lg cursor-pointer flex items-start justify-start hover:bg-purple-100" onClick={(e) => {e.currentTarget.classList.toggle('active')}} >
-              <span className="w-8 text-purple-600 h-8 bg-purple-100 rounded-full flex-none mr-3 flex justify-center items-center">
+            <div className="header__card py-3 px-6 max-w-sm rounded-lg cursor-pointer flex items-start justify-start hover:bg-orange-100" onClick={(e) => {e.currentTarget.classList.toggle('active')}} >
+              <span className="w-8 text-orange-600 h-8 bg-orange-100 rounded-full flex-none mr-3 flex justify-center items-center">
                 <AiFillSound />
               </span>
               <div className="">
@@ -173,8 +173,8 @@ const Header: FC<HeaderProps> = () => {
               </div>
             </div>
 
-            <div className="header__card py-3 px-6 max-w-sm rounded-lg cursor-pointer flex items-start justify-start hover:bg-purple-100" >
-              <span className="w-8 text-purple-600 h-8 bg-purple-100 rounded-full flex-none mr-3 flex justify-center items-center">
+            <div className="header__card py-3 px-6 max-w-sm rounded-lg cursor-pointer flex items-start justify-start hover:bg-orange-100" >
+              <span className="w-8 text-orange-600 h-8 bg-orange-100 rounded-full flex-none mr-3 flex justify-center items-center">
                 <BiBuildings />
               </span>
               <div className="">
