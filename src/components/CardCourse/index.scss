@@ -1,0 +1,24 @@
+.card-courses{
+  &__popup{
+    transition: transform .2s ease-in-out;
+    transform: translateY(-50%) scale(0);
+  }
+
+  &:hover{
+    .card-courses__popup{
+      transform: translateY(-50%) scale(1);
+    }
+  }
+
+  &__img{
+    overflow: hidden;
+    img{
+      transition: transform .3s ease-in-out;
+    }
+    &:hover{
+      & > img{
+        transform: scale(1.1);
+      }
+    }
+  }
+}

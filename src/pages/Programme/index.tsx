@@ -3,9 +3,9 @@ import Banner from "../../containers/Banner";
 import Layout from "../../containers/Loyout";
 import Info from "../../assets/images/info.jpeg";
 
-type Programes = {};
+type Programe = {};
 
-const Programes: FC<Programes> = () => {
+const ProgrameDetail: FC<Programe> = () => {
   return (
     <Layout>
       <Banner 
@@ -49,4 +49,4 @@ const Programes: FC<Programes> = () => {
   );
 };
 
-export default Programes;
+export default ProgrameDetail;

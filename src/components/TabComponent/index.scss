@@ -1,0 +1,29 @@
+.tab-component{
+  .btn-toggle{
+    &.active{
+      transform: rotate(180deg);
+    }
+  }
+
+  &__table{
+    height: 0;
+    padding: 0;
+    border: none;
+    transition: all .4s ease-in-out;
+    *{
+      border: none;
+    }
+    button{
+      opacity: 0;
+    }
+
+    &.active{
+      height: auto;
+      // border: initial;
+
+      button{
+        opacity: 1;
+      }
+    }
+  }
+}

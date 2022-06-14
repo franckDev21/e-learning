@@ -15,13 +15,15 @@ import Studen3 from "../../assets/images/Doctor.jpeg";
 
 import "./index.scss";
 import Banner from "../../containers/Banner";
+import CardCourse from "../../components/CardCourse";
 
 type HomeProps = {};
 
 const Home: FC<HomeProps> = () => {
   return (
     <Layout>
-      <Banner />
+      <Banner showSubBanner={true} />
+      
       <div className="bg-white py-20 about-section">
         <div className="container mx-auto flex items-center justify-center">
           <div className="text-center max-w-md flex flex-col justify-center items-center my-3">
@@ -41,7 +43,7 @@ const Home: FC<HomeProps> = () => {
               </h1>
               <p className="w-8/12 text-gray-500 mx-auto mt-2">
                 Le niveau de nos parcours certifiants est reconnu par l'État
-                français
+                du Cameroun
               </p>
             </div>
           </div>
@@ -84,7 +86,7 @@ const Home: FC<HomeProps> = () => {
               </h1>
               <p className="w-8/12 text-gray-500 mx-auto mt-2">
                 Vous trouvez un emploi sous 6 mois ou nous remboursons vos frais
-                de scolarité*
+                de scolarité
               </p>
             </div>
           </div>
@@ -101,146 +103,44 @@ const Home: FC<HomeProps> = () => {
             Les étudiants <span className="souligne">consultent</span>
           </h1>
 
-          <div className="flex w-full justify-between">
-            <div className=" mt-6">
-              <div className="flex flex-col ">
-                <div className="w-72 h-40 relative">
-                  <span className="px-2 py-2 absolute top-0 left-0 z-20 bg-orange-400 text-white">
-                    Informatique
-                  </span>
-                  <img
-                    src={Info}
-                    className="absolute left-0 w-full h-full object-cover z-10"
-                    width={200}
-                    alt="web"
-                  />
-                </div>
-              </div>
+          <div className="flex w-full justify-between flex-wrap">
+            <CardCourse
+              title="Developpement d'application web"
+              description="Vous allez apprendre à développer des sites web grâce aux langages HTML5, CSS3, JavaScript, PHP, MySQL..."
+              categorie="Informatique"
+              image={Info}
+              imgProf={Studen1}
+              classColor="bg-orange-400"
+            />
 
-              <h1 className=" font-bold mt-1 w-72">
-                Developpement d'application web
-              </h1>
+            <CardCourse
+              title="Finace & Investissement"
+              description="La finance recouvre un domaine d'activité — celui du financement — qui consiste à fournir l'argent nécessaire à la réalisation"
+              categorie="Finance"
+              image={Finance}
+              imgProf={Studen2}
+              classColor="bg-yellow-400"
+            />
 
-              <p className="text-gray-400 text-sm w-72">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem, doloribus.
-              </p>
+            <CardCourse
+              title="Création d'un nouveau circuit"
+              description="Un circuit intégré est un élément dans lequel les fonctions de plusieurs composants électroniques sont réalisées dans.. "
+              categorie="Électronique"
+              image={Electro}
+              imgProf={Studen3}
+              classColor="bg-violet-400"
+            />
 
-              <div className="flex mt-4">
-                <div className="w-10 h-10 rounded-full bg-white "></div>
-                <div>
-                  <h2 className="text-sm font-semibold ml-2">Laure Tsague</h2>
-                  <p className="text-xs text-gray-400 ml-2">
-                    Lorem, ipsum dolor.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <CardCourse
+              title="Infirmier(e) certifier"
+              description="Pour exercer en tant que médecin, le diplôme d'Etat de docteur en médecine est obligatoire. Il est délivré à l'issue de la formation"
+              categorie="santé & Médecine"
+              image={Doctor}
+              imgProf={Studen1}
+              classColor="bg-green-400"
+              endCard={true}
+            />
 
-            <div className=" mt-6">
-              <div className="flex flex-col ">
-                <div className="w-72 h-40 relative">
-                  <span className="px-2 py-2 absolute top-0 left-0 z-20 bg-yellow-400 text-white">
-                    Finance
-                  </span>
-                  <img
-                    src={Finance}
-                    className="absolute left-0 w-full h-full object-cover z-10"
-                    width={200}
-                    alt="web"
-                  />
-                </div>
-              </div>
-
-              <h1 className=" font-bold mt-1 w-72">
-                Finace & Investissement
-              </h1>
-
-              <p className="text-gray-400 text-sm w-72">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
-              </p>
-
-              <div className="flex mt-4">
-                <div className="w-10 h-10 rounded-full bg-white "></div>
-                <div>
-                  <h2 className="text-sm font-semibold ml-2">Mr Kevin</h2>
-                  <p className="text-xs text-gray-400 ml-2">
-                    Lorem, ipsum dolor.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className=" mt-6">
-              <div className="flex flex-col ">
-                <div className="w-72 h-40 relative">
-                  <span className="px-2 py-2 absolute top-0 left-0 z-20 bg-violet-400 text-white">
-                    Électronique
-                  </span>
-                  <img
-                    src={Electro}
-                    className="absolute left-0 w-full h-full object-cover z-10"
-                    width={200}
-                    alt="web"
-                  />
-                </div>
-              </div>
-
-              <h1 className=" font-bold mt-1 w-72">
-                Developpement d'application web
-              </h1>
-
-              <p className="text-gray-400 text-sm w-72">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem, doloribus.
-              </p>
-
-              <div className="flex mt-4">
-                <div className="w-10 h-10 rounded-full bg-white "></div>
-                <div>
-                  <h2 className="text-sm font-semibold ml-2">Louis E</h2>
-                  <p className="text-xs text-gray-400 ml-2">
-                    Lorem, ipsum dolor.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className=" mt-6">
-              <div className="flex flex-col ">
-                <div className="w-72 h-40 relative">
-                  <span className="px-2 py-2 absolute top-0 left-0 z-20 bg-green-400 text-white">
-                    santé & Médecine
-                  </span>
-                  <img
-                    src={Doctor}
-                    className="absolute left-0 w-full h-full object-cover z-10"
-                    width={200}
-                    alt="web"
-                  />
-                </div>
-              </div>
-
-              <h1 className=" font-bold mt-1 w-72">
-                Infirmier(e) certifier
-              </h1>
-
-              <p className="text-gray-400 text-sm w-72">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem, doloribus.
-              </p>
-
-              <div className="flex mt-4">
-                <div className="w-10 h-10 rounded-full bg-white "></div>
-                <div>
-                  <h2 className="text-sm font-semibold ml-2">Blue Ekanka</h2>
-                  <p className="text-xs text-gray-400 ml-2">
-                    Lorem, ipsum dolor.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -249,7 +149,7 @@ const Home: FC<HomeProps> = () => {
         <div className="h-0.5 bg-orange-400 mx-auto opacity-50  rounded-md max-w-lg  top-0 z-30"></div>
         <div className="container mx-auto  flex justify-start items-center mt-20">
 
-          <div className="w-3/4  flex justify-start items-center relative">
+          <div className="w-3/4  flex justify-start items-start relative">
             <div className="mr-10 w-1/3 rounded-md p-4 relative bg-gray-100">
               <div className="mb-2">
                 <div className="w-16 h-16 bg-gray-100 rounded-full overflow-hidden left-10 absolute top-0 -translate-y-1/2  shadow-md">
@@ -261,7 +161,7 @@ const Home: FC<HomeProps> = () => {
                 <h2 className="text-lg font-semibold mt-4" style={{color: '#003667'}}>Great quality !</h2>
 
                 <p className="py-4 text-gray-400 font-light">
-                  I wanted to place a review since their support helped me within a day or so, which is nice! Thanks and 5 stars!				
+                Une équipe compétente, dynamique et réactive ; toujours à l'écoute et d'un grand professionnalisme. Avec Nat Univ, vous êtes garanti D'être un proffesionnel	
                 </p>
               </div>
             </div>
@@ -277,7 +177,7 @@ const Home: FC<HomeProps> = () => {
                 <h2 className="text-lg font-semibold mt-4" style={{color: '#003667'}}>Great quality !</h2>
 
                 <p className="py-4 text-gray-400 font-light">
-                  I wanted to place a review since their support helped me within a day or so, which is nice! Thanks and 5 stars!				
+                Très à l’écoute de mes besoins, Nat Univ a ensuite en moi le désir et la passion d'un bon développeur . Merci Nat Univ
                 </p>
               </div>
             </div>
@@ -305,12 +205,12 @@ const Home: FC<HomeProps> = () => {
             </div>
           </div>
 
-          <div className=" w-1/4">
-            <h1 className="text-center font-semibold   text-3xl mb-2">People Say <br /> About EduMall</h1>
+          <div className=" w-1/4 -translate-y-3">
+            <h1 className="text-left font-semibold   text-3xl mb-2">Ce que gens disent À propos de <span className="text-primary font-semibold">Nat Univ</span></h1>
             <p className=" font-light text-sm leading-8 my-4 text-gray-400">
-              One-stop solution for any eLearning center, online courses. People love EduMall because they can create their sites with ease here.
+            Faite comme beaucoup d'étudiant et particulier qui nous ont fait confiance et rejoignez nous pour devenir des professionnels
             </p>
-            <button className="px-10 py-4 text-white rounded-md bg-orange-400 mt-4 transition-all hover:bg-gray-700 hover:text-white">view all</button>
+            <button className="px-10 py-4 text-white rounded-md bg-orange-400 mt-4 transition-all hover:bg-gray-700 hover:text-white">Commencer avec nous </button>
           </div>
 
         </div>

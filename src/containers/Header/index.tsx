@@ -67,8 +67,8 @@ const Header: FC<HeaderProps> = () => {
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <div className="-translate-y-2 cursor-pointer">
-            <img src={Logo} width={100} className='rounded-md translate-y-2' alt="logo" />
-
+            <Link to='/'><img src={Logo} width={100} className='rounded-md translate-y-2' alt="logo" /></Link>
+            
             {/* <Link to="/" className="logo uppercase font-semibold text-2xl" style={{color: '#003667'}} >
             <span className="text-orange-600 text-4xl">D</span>IGITAL<span className="text-orange-600 text-4xl">.</span>COLLEGE
             </Link>
@@ -76,14 +76,14 @@ const Header: FC<HeaderProps> = () => {
           </div>
 
           <div onClick={(e) => showOverlyFormations() } className=" header__link ml-10 flex items-end cursor-pointer py-2 px-3 rounded-md hover:bg-orange-50 bg-opacity-30">
-            <Link to='/' className="font- mr-3" >Formations</Link>
+            <span  className="font- mr-3" >Formations</span>
             <span className="w-4 h-4 -translate-y-0.5"> 
               {!showFormationOverline ? <VscTriangleDown size={14} /> : <VscTriangleUp size={14} />} 
             </span>
           </div>
           <span style={{width: 1}} className="h-6 bg-gray-300 mx-4"></span>
           <div onClick={(e) => showOverlyProgramme()} className=" header__link flex items-end cursor-pointer py-2 px-3 rounded-md hover:bg-orange-50 bg-opacity-30">
-            <Link to='/' className="">Programmes</Link>
+            <span className="">Programmes</span>
           </div>
         </div>
         <div className="flex items-center  w-1/2 justify-end">
@@ -97,7 +97,7 @@ const Header: FC<HeaderProps> = () => {
         </div>
       </div>
 
-      <div ref={overlyFormationHeaderRef} className="header__overly z-20 border-t">
+      <div ref={overlyFormationHeaderRef} className="header__overly z-50 border-t shadow-md">
 
         {/* Formations */}
         <div className="container mx-auto pt-4 pb-10 flex">
@@ -134,12 +134,13 @@ const Header: FC<HeaderProps> = () => {
 
       </div>
 
-      <div ref={overlyProgrammeHeaderRef} className="header__overly z-20 border-t">
+      <div ref={overlyProgrammeHeaderRef} className="header__overly z-50 border-t shadow-md">
         {/* Programmes */}
         <div className="container mx-auto pt-4 pb-10 flex">
           <div className="w-1/4">
             <div className="text-gray-900 font-bold text-3xl">Nos programmes</div>
             <span className="text-sm text-gray-400">100% en ligne et à votre rythme.</span>
+            <Link to='/programmes' className=" inline-block px-4 py-3 rounded-md bg-primary text-white mt-4 hover:bg-transparent hover:text-sky-800 border-2 border-sky-800">Tous les programmes</Link>
           </div>
           <div className="ml-5 grid grid-cols-2 gap-4 justify-start items-center">
 
@@ -147,7 +148,7 @@ const Header: FC<HeaderProps> = () => {
               <span className="w-8 text-orange-600 h-8 bg-orange-100 rounded-full flex-none mr-3 flex justify-center items-center">
                 <FaDesktop  />
               </span>
-              <Link to='/programme/informatique' className="">
+              <Link to='/programmes' className="">
                 <h1 className="text-gray-900 font-semibold mb-2">Informatiques</h1>
                 <p className="text-sm ">Apprenez un métier d’avenir grâce à des projets concrets et un mentor individuel.</p>
               </Link>
