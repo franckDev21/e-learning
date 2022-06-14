@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { BsFillCaretDownFill } from 'react-icons/bs';
+import { Link } from "react-router-dom";
 
 import "./index.scss";
 
@@ -50,10 +51,10 @@ const TableComponent: FC<TableComponentProps> = () => {
                   <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
                   <span  className="px-6 py-3 w-1/6">20 Septembre 2022</span>
                   <span  className="px-6 py-3 w-1/6 rounded-tr-md">
-                    <button onClick={(e)=>{
+                    <Link to='/programme/informatique' onClick={(e)=>{
                       e.stopPropagation()
                       console.log(e)
-                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</button>
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
                   </span>
                 </div>
               </div>
@@ -70,10 +71,10 @@ const TableComponent: FC<TableComponentProps> = () => {
                   <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
                   <span  className="px-6 py-3 w-1/6">21 Janvier 2023</span>
                   <span  className="px-6 py-3 w-1/6 rounded-tr-md">
-                    <button onClick={(e)=>{
+                    <Link to='/programme/informatique' onClick={(e)=>{
                       e.stopPropagation()
                       console.log(e)
-                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</button>
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
                   </span>
                 </div>
               </div>
@@ -90,10 +91,10 @@ const TableComponent: FC<TableComponentProps> = () => {
                   <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
                   <span  className="px-6 py-3 w-1/6">21 Janvier 2023</span>
                   <span  className="px-6 py-3 w-1/6 rounded-tr-md">
-                    <button onClick={(e)=>{
+                    <Link to='/programme/informatique' onClick={(e)=>{
                       e.stopPropagation()
                       console.log(e)
-                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</button>
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
                   </span>
                 </div>
               </div>
@@ -120,10 +121,10 @@ const TableComponent: FC<TableComponentProps> = () => {
                   <span  className="px-6 py-3 w-1/6">Yaoundé - Cameroun</span>
                   <span  className="px-6 py-3 w-1/6">20 Septembre 2022</span>
                   <span  className="px-6 py-3 w-1/6 rounded-tr-md">
-                    <button onClick={(e)=>{
+                    <Link to='/programme/informatique' onClick={(e)=>{
                       e.stopPropagation()
                       console.log(e)
-                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</button>
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
                   </span>
                 </div>
               </div>
@@ -140,10 +141,10 @@ const TableComponent: FC<TableComponentProps> = () => {
                   <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
                   <span  className="px-6 py-3 w-1/6">10 Septembre 2022</span>
                   <span  className="px-6 py-3 w-1/6 rounded-tr-md">
-                    <button onClick={(e)=>{
+                    <Link to='/programme/informatique' onClick={(e)=>{
                       e.stopPropagation()
                       console.log(e)
-                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</button>
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
                   </span>
                 </div>
               </div>
@@ -160,10 +161,10 @@ const TableComponent: FC<TableComponentProps> = () => {
                   <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
                   <span  className="px-6 py-3 w-1/6">10 Octobre 2022</span>
                   <span  className="px-6 py-3 w-1/6 rounded-tr-md">
-                    <button onClick={(e)=>{
+                    <Link to='/programme/informatique' onClick={(e)=>{
                       e.stopPropagation()
                       console.log(e)
-                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</button>
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
                   </span>
                 </div>
               </div>
@@ -190,10 +191,10 @@ const TableComponent: FC<TableComponentProps> = () => {
                   <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
                   <span  className="px-6 py-3 w-1/6">03 Septembre 2022</span>
                   <span  className="px-6 py-3 w-1/6 rounded-tr-md">
-                    <button onClick={(e)=>{
+                    <Link to='/programme/informatique' onClick={(e)=>{
                       e.stopPropagation()
                       console.log(e)
-                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</button>
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
                   </span>
                 </div>
               </div>
@@ -210,10 +211,10 @@ const TableComponent: FC<TableComponentProps> = () => {
                   <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
                   <span  className="px-6 py-3 w-1/6">10 Septembre 2022</span>
                   <span  className="px-6 py-3 w-1/6 rounded-tr-md">
-                    <button onClick={(e)=>{
+                    <Link to='/programme/informatique' onClick={(e)=>{
                       e.stopPropagation()
                       console.log(e)
-                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</button>
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
                   </span>
                 </div>
               </div>
@@ -230,10 +231,10 @@ const TableComponent: FC<TableComponentProps> = () => {
                   <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
                   <span  className="px-6 py-3 w-1/6">10 Octobre 2022</span>
                   <span  className="px-6 py-3 w-1/6 rounded-tr-md">
-                    <button onClick={(e)=>{
+                    <Link to='/programme/informatique' onClick={(e)=>{
                       e.stopPropagation()
                       console.log(e)
-                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</button>
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
                   </span>
                 </div>
               </div>
@@ -260,10 +261,10 @@ const TableComponent: FC<TableComponentProps> = () => {
                   <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
                   <span  className="px-6 py-3 w-1/6">03 Septembre 2022</span>
                   <span  className="px-6 py-3 w-1/6 rounded-tr-md">
-                    <button onClick={(e)=>{
+                    <Link to='/programme/informatique' onClick={(e)=>{
                       e.stopPropagation()
                       console.log(e)
-                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</button>
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
                   </span>
                 </div>
               </div>
@@ -280,10 +281,10 @@ const TableComponent: FC<TableComponentProps> = () => {
                   <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
                   <span  className="px-6 py-3 w-1/6">10 Septembre 2022</span>
                   <span  className="px-6 py-3 w-1/6 rounded-tr-md">
-                    <button onClick={(e)=>{
+                    <Link to='/programme/informatique' onClick={(e)=>{
                       e.stopPropagation()
                       console.log(e)
-                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</button>
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
                   </span>
                 </div>
               </div>
@@ -310,10 +311,10 @@ const TableComponent: FC<TableComponentProps> = () => {
                   <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
                   <span  className="px-6 py-3 w-1/6">03 Septembre 2022</span>
                   <span  className="px-6 py-3 w-1/6 rounded-tr-md">
-                    <button onClick={(e)=>{
+                    <Link to='/programme/informatique' onClick={(e)=>{
                       e.stopPropagation()
                       console.log(e)
-                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</button>
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
                   </span>
                 </div>
               </div>
@@ -330,10 +331,10 @@ const TableComponent: FC<TableComponentProps> = () => {
                   <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
                   <span  className="px-6 py-3 w-1/6">10 Septembre 2022</span>
                   <span  className="px-6 py-3 w-1/6 rounded-tr-md">
-                    <button onClick={(e)=>{
+                    <Link to='/programme/informatique' onClick={(e)=>{
                       e.stopPropagation()
                       console.log(e)
-                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</button>
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
                   </span>
                 </div>
               </div>
@@ -350,10 +351,10 @@ const TableComponent: FC<TableComponentProps> = () => {
                   <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
                   <span  className="px-6 py-3 w-1/6">10 Octobre 2022</span>
                   <span  className="px-6 py-3 w-1/6 rounded-tr-md">
-                    <button onClick={(e)=>{
+                    <Link to='/programme/informatique' onClick={(e)=>{
                       e.stopPropagation()
                       console.log(e)
-                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</button>
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
                   </span>
                 </div>
               </div>

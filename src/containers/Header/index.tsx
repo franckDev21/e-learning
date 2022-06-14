@@ -148,10 +148,10 @@ const Header: FC<HeaderProps> = () => {
               <span className="w-8 text-orange-600 h-8 bg-orange-100 rounded-full flex-none mr-3 flex justify-center items-center">
                 <FaDesktop  />
               </span>
-              <Link to='/programme/informatique' className="">
-                <h1 className="text-gray-900 font-semibold mb-2">Informatiques</h1>
+              <div className="">
+                <h1 className="text-gray-900 font-semibold mb-2">Informatique</h1>
                 <p className="text-sm ">Apprenez un métier d’avenir grâce à des projets concrets et un mentor individuel.</p>
-              </Link>
+              </div>
             </div>
 
             <div className="header__card py-3 px-6 max-w-sm rounded-lg cursor-pointer flex items-start justify-start hover:bg-orange-100" >
