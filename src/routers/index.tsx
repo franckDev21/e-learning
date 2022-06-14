@@ -5,14 +5,16 @@ import PageNotFound from "../pages/PageNotFound";
 import Home from "../pages/Home";
 import Login from "../pages/Auth/Login";
 import Register from "../pages/Auth/Register";
-import ProgrameDetail from "../pages/Programme";
 import Programes from "../pages/Programme/Home";
+import Course from "../pages/Course";
+import ProgrameDetail from "../pages/Programme/Detail";
 
 const pages: any[] = [
   { path: "/", component: <Home /> },
   { path: "/auth", component: <Login /> },
   { path: "/programme/:name", component: <ProgrameDetail /> },
-  { path: "/programmes", component: <Programes /> }
+  { path: "/programmes", component: <Programes /> },
+  { path: "/cours", component: <Course /> },
 ];
 
 const AppRouting: React.FC = () => {

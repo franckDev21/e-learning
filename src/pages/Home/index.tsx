@@ -12,6 +12,8 @@ import Doctor from "../../assets/images/Doctor.jpeg";
 import Studen1 from "../../assets/images/student_1.jpeg";
 import Studen2 from "../../assets/images/student_3.jpeg";
 import Studen3 from "../../assets/images/Doctor.jpeg";
+import Dev from "../../assets/images/Dev.jpeg";
+import Ingenieur from "../../assets/images/Ingenieur.jpeg";
 
 import "./index.scss";
 import Banner from "../../containers/Banner";
@@ -106,39 +108,47 @@ const Home: FC<HomeProps> = () => {
           <div className="flex w-full justify-between flex-wrap">
             <CardCourse
               title="Developpement d'application web"
-              description="Vous allez apprendre à développer des sites web grâce aux langages HTML5, CSS3, JavaScript, PHP, MySQL..."
+              description="Programmation informatique"
               categorie="Informatique"
               image={Info}
-              imgProf={Studen1}
+              imgProf={Dev}
               classColor="bg-orange-400"
+              startNumber={['2','4','4']}
+              profName="Mr Kevin"
             />
 
             <CardCourse
               title="Finace & Investissement"
-              description="La finance recouvre un domaine d'activité — celui du financement — qui consiste à fournir l'argent nécessaire à la réalisation"
+              description="comprendre l'évolution du marché financier"
               categorie="Finance"
               image={Finance}
               imgProf={Studen2}
               classColor="bg-yellow-400"
+              statutProf="Analyste et Trader financier"
+              profName="Mme Kueya Laure"
             />
 
             <CardCourse
               title="Création d'un nouveau circuit"
-              description="Un circuit intégré est un élément dans lequel les fonctions de plusieurs composants électroniques sont réalisées dans.. "
+              description="Techniques du génie électronique"
               categorie="Électronique"
               image={Electro}
-              imgProf={Studen3}
+              imgProf={Ingenieur}
               classColor="bg-violet-400"
+              statutProf="Ingénieur mécanique"
+              profName="Mr Soufo bertrand"
             />
 
             <CardCourse
               title="Infirmier(e) certifier"
-              description="Pour exercer en tant que médecin, le diplôme d'Etat de docteur en médecine est obligatoire. Il est délivré à l'issue de la formation"
+              description="Soins infirmiers auxiliaires"
               categorie="santé & Médecine"
               image={Doctor}
-              imgProf={Studen1}
+              imgProf={Studen3}
               classColor="bg-green-400"
               endCard={true}
+              statutProf="Medecin generaliste"
+              profName="Mr Ngo Partick"
             />
 
           </div>

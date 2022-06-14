@@ -63,7 +63,7 @@ const Header: FC<HeaderProps> = () => {
   }
 
   return (
-    <header className="py-4 bg-white text-gray-600 header">
+    <header className="py-4 bg-white text-gray-600 header"  >
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <div className="-translate-y-2 cursor-pointer">
@@ -148,7 +148,7 @@ const Header: FC<HeaderProps> = () => {
               <span className="w-8 text-orange-600 h-8 bg-orange-100 rounded-full flex-none mr-3 flex justify-center items-center">
                 <FaDesktop  />
               </span>
-              <Link to='/programmes' className="">
+              <Link to='/programme/informatique' className="">
                 <h1 className="text-gray-900 font-semibold mb-2">Informatiques</h1>
                 <p className="text-sm ">Apprenez un métier d’avenir grâce à des projets concrets et un mentor individuel.</p>
               </Link>

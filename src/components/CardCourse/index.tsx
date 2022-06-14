@@ -1,8 +1,10 @@
 import React, { FC } from "react";
 import { BsFillCaretDownFill,BsFillCaretLeftFill } from 'react-icons/bs';
 import { AiOutlineCheck } from 'react-icons/ai';
+import { BsStarFill } from 'react-icons/bs';
 
 import "./index.scss";
+import { useNavigate } from "react-router-dom";
 
 type CardCourseProps = {
   image ?: string,
@@ -11,13 +13,39 @@ type CardCourseProps = {
   description ?: string,
   imgProf ?: string,
   classColor ?: string,
-  endCard ?: boolean
+  endCard ?: boolean,
+  statutProf ?: string,
+  startNumber ?: any[],
+  profName ?: string,
+  showPopUp ?: boolean,
+  children ?: React.ReactNode
 };
 
-const CardCourse: FC<CardCourseProps> = ({image,title,description,categorie,imgProf,classColor,endCard = false}) => {
+const CardCourse: FC<CardCourseProps> = ({
+  image,
+  title,
+  description,
+  categorie,
+  imgProf,
+  profName,
+  classColor,
+  showPopUp = true,
+  endCard = false,
+  statutProf = "Développeur web",
+  startNumber = [1,2,4,5],
+  children
+}) => {
+
+  const navigate = useNavigate();
+
+  const goToPage = (path : string) => {
+    window.setTimeout(() => {
+      navigate(path);
+    },1500);
+  }
 
   return (
-    <div className=" mt-6 cursor-pointer card-courses relative">
+    <div onClick={() => goToPage('/cours')} className=" mt-6 cursor-pointer card-courses relative w-72">
       <div className="flex flex-col ">
         <div className="w-72 h-40 relative card-courses__img">
           <span className={`px-2 py-2 absolute top-0 left-0 z-20 text-white ${classColor}`} >
@@ -36,23 +64,32 @@ const CardCourse: FC<CardCourseProps> = ({image,title,description,categorie,imgP
         {title}
       </h1>
 
-      <p className="text-gray-400 text-sm w-72">
+      <p className="text-gray-400 font-light text-sm w-72">
        {description}
       </p>
 
-      <div className="flex mt-4">
+      {children}
+      <div className="py-1 flex">
+        <span className="text-orange-400 text-xs font-semibold">{startNumber.length}</span>
+        <div className="flex items-center pl-4">
+          {startNumber.map(start => <span><BsStarFill size={10} className='text-orange-300 mx-0.5' /></span>)}
+        </div>
+        <span className="text-gray-400 pl-2 text-xs font-semibold">({startNumber.join('')})</span>
+      </div>
+
+      <div className="flex mt-2">
         <div className="w-10 h-10 overflow-hidden  rounded-full bg-white relative">
           <img src={imgProf} className="absolute w-full h-full object-cover" alt="prof" />
         </div>
         <div>
-          <h2 className="text-sm font-semibold ml-2">Laure Tsague</h2>
+          <h2 className="text-sm font-semibold ml-2">{profName && profName}</h2>
           <p className="text-xs text-gray-400 ml-2">
-            Lorem, ipsum dolor.
+            {statutProf}
           </p>
         </div>
       </div>
 
-      <div className={`card-courses__popup -translate-y-full  ${endCard ? 'card-courses__popup--end top-full right-0 ': ' top-1/3 left-full'}  absolute cursor-default  ml-4 py-4 px-6 w-96 rounded-md shadow-md bg-white z-50`}>
+      {showPopUp && <div className={`card-courses__popup -translate-y-full  ${endCard ? 'card-courses__popup--end top-full right-0 ': ' top-1/3 left-full'}  absolute cursor-default  ml-4 py-4 px-6 w-80 rounded-md shadow-md bg-white z-50`}>
         <h1 className="text-xl font-semibold mb-3">{title}</h1>
 
         <span className="text-xs block text-gray-600">Mise à jour <span className="text-primary font-semibold">mai 2022</span></span>
@@ -77,10 +114,10 @@ const CardCourse: FC<CardCourseProps> = ({image,title,description,categorie,imgP
           </li>
         </ul>
 
-        <button className="px-4 py-3 block rounded-md active:scale-95 bg-orange-400 text-white">Commencer la formation</button>
+        <button onClick={() => goToPage('/cours')} className="px-4 w-full py-3 block rounded-md active:scale-95 bg-orange-400 text-white">Commencer la formation</button>
 
         <span className={`absolute ${endCard ? 'left-1/2 -translate-x-1/2 -top-6 rotate-90':'-translate-y-1/2 top-1/2 -left-7 '}`}><BsFillCaretLeftFill color="#fff" size={50} /></span>
-      </div>
+      </div>}
     </div>
   );
 };
