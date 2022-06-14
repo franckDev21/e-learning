@@ -45,7 +45,7 @@ const CardCourse: FC<CardCourseProps> = ({
   }
 
   return (
-    <div onClick={() => goToPage('/cours')} className=" mt-6 cursor-pointer card-courses relative w-72">
+    <div onClick={() => goToPage('/cours/Introduction à la programmation')} className=" mt-6 cursor-pointer card-courses relative w-72">
       <div className="flex flex-col ">
         <div className="w-72 h-40 relative card-courses__img">
           <span className={`px-2 py-2 absolute top-0 left-0 z-20 text-white ${classColor}`} >

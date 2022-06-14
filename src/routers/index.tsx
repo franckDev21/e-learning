@@ -8,6 +8,7 @@ import Register from "../pages/Auth/Register";
 import Programes from "../pages/Programme/Home";
 import Course from "../pages/Course";
 import ProgrameDetail from "../pages/Programme/Detail";
+import CourseDetail from "../pages/Course/Detail";
 
 const pages: any[] = [
   { path: "/", component: <Home /> },
@@ -15,6 +16,7 @@ const pages: any[] = [
   { path: "/programme/:name", component: <ProgrameDetail /> },
   { path: "/programmes", component: <Programes /> },
   { path: "/cours", component: <Course /> },
+  { path: "/cours/:name", component: <CourseDetail /> },
 ];
 
 const AppRouting: React.FC = () => {
