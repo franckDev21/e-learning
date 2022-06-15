@@ -39,7 +39,7 @@ const CourseDetail: FC<CourseDetailProps> = () => {
             <div className="my-10">
               <h1 className="text-2xl font-bold" style={{color: '#003667'}}>A Propos de ce Cours</h1> 
               <div className="w-10/12 mt-2 text-gray-600">
-                Un développeur ou programmeur Web est une personne qui prend un projet Web, qui a été pensée et réfléchie par un client ou une équipe de conception, et la transforme en site Web. Ils le font en écrivant des lignes de code compliqué. Pour les écrire, ils utilisent différents langages avec une spécificité et une utilité pour chacun d’entre eux. 
+                Il fabrique, répare, installe placards, escaliers, parquets, volets, meubles, boiseries... Il choisit tout d'abord le matériau adapté au travail à réaliser. Ensuite, il trace à l'aide du trusquin, du compas, de l'équerre et de la règle, les dimensions nécessaires à la confection des pièces.
               </div>
             </div>
 
@@ -58,13 +58,13 @@ const CourseDetail: FC<CourseDetailProps> = () => {
                   <input hidden type="checkbox" id="chck1" />
                   <label className="tab-label relative w-full flex items-center justify-between text-gray-700" htmlFor="chck1">
                     <span>Présentation de la formation</span>
-                    <span className="inline-block mr-10 font-light ">2 sessions . 16 min</span>
+                    <span className="inline-block mr-10 font-light ">2 sessions . 33h 48 min</span>
                   </label>
                   <div className="tab-content px-4">
                     <div className="flex justify-between items-center mb-6">
                       <div className="flex justify-between items-center">
                         <AiFillPlayCircle size={20} />
-                        <span className="font-light pl-5 inline-block color-primary cursor-pointer underline">1 Présentation du métier de développeur Web</span>
+                        <span className="font-light pl-5 inline-block color-primary cursor-pointer underline">1 Introduction à la CAO</span>
                       </div>
 
                       <div className="flex justify-between items-center">
@@ -76,7 +76,7 @@ const CourseDetail: FC<CourseDetailProps> = () => {
                     <div className="flex justify-between items-center mb-6">
                       <div className="flex justify-between items-center">
                         <AiFillPlayCircle size={20} />
-                        <span className="font-light pl-5 inline-block color-primary cursor-pointer underline">2 Présentation des grandes parties de la formation</span>
+                        <span className="font-light pl-5 inline-block color-primary cursor-pointer underline">2 L'élément de base d'AutoCAD</span>
                       </div>
 
                       <div className="flex justify-between items-center">
@@ -88,7 +88,19 @@ const CourseDetail: FC<CourseDetailProps> = () => {
                     <div className="flex justify-between items-center mb-6">
                       <div className="flex justify-between items-center">
                         <AiFillPlayCircle size={20} />
-                        <span className="font-light pl-5 inline-block color-primary cursor-pointer underline">3 Présentation du développement frontend</span>
+                        <span className="font-light pl-5 inline-block color-primary cursor-pointer underline">3 Le début d'AutoCAD</span>
+                      </div>
+
+                      <div className="flex justify-between items-center">
+                        <span className="font-light pl-3 color-primary cursor-pointer underline">Aperçu</span>
+                        <span className="text-gray-400 pl-4">05:42</span>
+                      </div>
+                    </div>
+
+                    <div className="flex justify-between items-center mb-6">
+                      <div className="flex justify-between items-center">
+                        <AiFillPlayCircle size={20} />
+                        <span className="font-light pl-5 inline-block color-primary cursor-pointer underline">4 Dessiner en utilisant le système de coordonnées de la ligne</span>
                       </div>
 
                       <div className="flex justify-between items-center">
@@ -110,14 +122,14 @@ const CourseDetail: FC<CourseDetailProps> = () => {
                 <div className="tab  bg-gray-100 text-gray-700 border">
                   <input hidden type="checkbox" id="chck2"/>
                   <label className="tab-label relative w-full flex items-center justify-between text-gray-700" htmlFor="chck2">
-                    <span>Les avantages de la formation</span>
+                    <span>Menuiserie  Dessins</span>
                     <span className="inline-block mr-10 font-light ">5 sessions . 35 min</span>
                   </label>
                   <div className="tab-content px-4">
                     <div className="flex justify-between items-center mb-6">
                       <div className="flex justify-between items-center">
                         <AiFillPlayCircle size={20} />
-                        <span className="font-light pl-5 inline-block color-primary cursor-pointer underline">1 Présentation du métier de développeur Web</span>
+                        <span className="font-light pl-5 inline-block color-primary cursor-pointer underline">1 Pain libre esquisse & CAD</span>
                       </div>
 
                       <div className="flex justify-between items-center">
@@ -129,7 +141,7 @@ const CourseDetail: FC<CourseDetailProps> = () => {
                     <div className="flex justify-between items-center mb-6">
                       <div className="flex justify-between items-center">
                         <AiFillPlayCircle size={20} />
-                        <span className="font-light pl-5 inline-block color-primary cursor-pointer underline">2 Présentation des grandes parties de la formation</span>
+                        <span className="font-light pl-5 inline-block color-primary cursor-pointer underline">2 Croquis de base</span>
                       </div>
 
                       <div className="flex justify-between items-center">
@@ -141,7 +153,19 @@ const CourseDetail: FC<CourseDetailProps> = () => {
                     <div className="flex justify-between items-center mb-6">
                       <div className="flex justify-between items-center">
                         <AiFillPlayCircle size={20} />
-                        <span className="font-light pl-5 inline-block color-primary cursor-pointer underline">3 Présentation du développement frontend</span>
+                        <span className="font-light pl-5 inline-block color-primary cursor-pointer underline">3 La perspective de Tracé à main levée</span>
+                      </div>
+
+                      <div className="flex justify-between items-center">
+                        <span className="font-light pl-3 color-primary cursor-pointer underline">Aperçu</span>
+                        <span className="text-gray-400 pl-4">05:42</span>
+                      </div>
+                    </div>
+
+                    <div className="flex justify-between items-center mb-6">
+                      <div className="flex justify-between items-center">
+                        <AiFillPlayCircle size={20} />
+                        <span className="font-light pl-5 inline-block color-primary cursor-pointer underline">4 Dessin utilisé à l'entreprise de meubles</span>
                       </div>
 
                       <div className="flex justify-between items-center">
@@ -163,14 +187,15 @@ const CourseDetail: FC<CourseDetailProps> = () => {
                 <div className="tab  bg-gray-100 text-gray-700 border">
                   <input hidden type="checkbox" id="chck3"/>
                   <label className="tab-label relative w-full flex items-center justify-between text-gray-700" htmlFor="chck3">
-                    <span>Introduction aux technologies du web</span>
+                    <span>Pratique de base sur les outils à main et outils électriques portatifs </span>
                     <span className="inline-block mr-10 font-light ">3 sessions . 32 min</span>
                   </label>
                   <div className="tab-content px-4">
                     <div className="flex justify-between items-center mb-6">
                       <div className="flex justify-between items-center">
                         <AiFillPlayCircle size={20} />
-                        <span className="font-light pl-5 inline-block color-primary cursor-pointer underline">1 Présentation du métier de développeur Web</span>
+                        <span className="font-light pl-5 inline-block color-primary cursor-pointer underline">1 La pratique, un accident de la sécurité d'abord aide-
+traitement</span>
                       </div>
 
                       <div className="flex justify-between items-center">
@@ -182,7 +207,8 @@ const CourseDetail: FC<CourseDetailProps> = () => {
                     <div className="flex justify-between items-center mb-6">
                       <div className="flex justify-between items-center">
                         <AiFillPlayCircle size={20} />
-                        <span className="font-light pl-5 inline-block color-primary cursor-pointer underline">2 Présentation des grandes parties de la formation</span>
+                        <span className="font-light pl-5 inline-block color-primary cursor-pointer underline">2 PTitrant La pratique de l'outil (carré, carré biseau,
+bande règle, étriers de placage, bord droit, jauges, etc.)</span>
                       </div>
 
                       <div className="flex justify-between items-center">
@@ -194,7 +220,7 @@ const CourseDetail: FC<CourseDetailProps> = () => {
                     <div className="flex justify-between items-center mb-6">
                       <div className="flex justify-between items-center">
                         <AiFillPlayCircle size={20} />
-                        <span className="font-light pl-5 inline-block color-primary cursor-pointer underline">3 Présentation du développement frontend</span>
+                        <span className="font-light pl-5 inline-block color-primary cursor-pointer underline">Outil à Main pratique de base (ciseaux, attirent couteau,Rabots, scies à main, etc.)</span>
                       </div>
 
                       <div className="flex justify-between items-center">

@@ -30,32 +30,32 @@ const CardAbout: FC<CardAboutProps> = ({
 
         <div className="flex text-sm items-start justify-start">
           <span className="translate-y-1 w-8 h-8 flex items-center justify-center p-2 rounded-full border"><BsCheckLg className="text-green-600" size={20} /></span>
-          <span className="ml-4">Durant ce cours, vous allez apprendre fondamentaux du développement web.</span>
+          <span className="ml-4">Excellentes capacités manuelles et précision</span>
         </div>
         
         <div className="flex text-sm items-start justify-start">
           <span className="translate-y-1 w-8 h-8 flex items-center justify-center p-2 rounded-full border"><BsCheckLg className="text-green-600" size={20} /></span>
-          <span className="ml-4">Vous allez apprendre à développer des sites web grâce aux langages HTML5, CSS3, JavaScript, PHP, MySQL, NodeJS, MongoDB, Express JS etc ..., .</span>
+          <span className="ml-4">Compétences techniques en menuiserie</span>
         </div>
 
         <div className="flex text-sm items-start justify-start">
           <span className="translate-y-1 w-8 h-8 flex items-center justify-center p-2 rounded-full border"><BsCheckLg className="text-green-600" size={20} /></span>
-          <span className="ml-4">Vous allez apprendre à rendre un site web responsive (un site s'adapte à tout type d'écran).</span>
+          <span className="ml-4">Connaissance des outils du métier (instruments manuels et machines automatiques)</span>
         </div>
         
         <div className="flex text-sm items-start justify-start">
           <span className="translate-y-1 w-8 h-8 flex items-center justify-center p-2 rounded-full border"><BsCheckLg className="text-green-600" size={20} /></span>
-          <span className="ml-4">Vous allez tout apprendre sur l'hébergement et la mise en ligne de votre site.</span>
+          <span className="ml-4">Compétences dans la réalisation d'éléments sur mesure</span>
         </div>
 
         <div className="flex text-sm items-start justify-start">
           <span className="translate-y-1 w-8 h-8 flex items-center justify-center p-2 rounded-full border"><BsCheckLg className="text-green-600" size={20} /></span>
-          <span className="ml-4">A la fin du cous, vous serez en mesure de créer et mettre en ligne des sites web statiques et/ou dynamiques.</span>
+          <span className="ml-4">Connaissance des procédures de montage et de pose</span>
         </div>
 
         <div className="flex text-sm items-start justify-start">
           <span className="translate-y-1 w-8 h-8 flex items-center justify-center p-2 rounded-full border"><BsCheckLg className="text-green-600" size={20} /></span>
-          <span className="ml-4">Vous serez en mesure d'étudier l’ensemble des solutions techniques disponibles pour réponse à un besoin technique</span>
+          <span className="ml-4">Capacités d'organisation du travail</span>
         </div>
       </div>
       <div className="absolute w-full py-3 px-3 left-0 right-0 bottom-0 bg-white">

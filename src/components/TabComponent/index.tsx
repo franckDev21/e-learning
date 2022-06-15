@@ -30,11 +30,42 @@ const TableComponent: FC<TableComponentProps> = () => {
           <th scope="col" className="px-6 py-3 w-1/6 rounded-tr-md">action</th>
         </tr>
       </thead>
+
       <tbody className="text-primary pb-4">
+        <tr className=" bg-slate-100">
+          <td className="overflow-hidden pt-6 cliquable" colSpan={6} onClick={(e) => toggleTr(e,'tab1')}>
+            <span className="flex cursor-pointer justify-between uppercase text-xl font-bold">
+              <span className="px-3">MENUISERIE</span>
+              <span id="btn-toggle" className=" w-4 h-4 pr-3 btn-toggle mr-4"><BsFillCaretDownFill size={16} /></span>
+            </span>
+            <div className="mx-2 tab-component__table" id="tab1">
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  mt-4" style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Boiseries</span>
+                  <span  className="px-6 py-3 w-1/6">1 année</span>
+                  <span  className="px-6 py-3 w-1/6">300 000 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Yaoundé - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">20 Septembre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/Menuiserie' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
         <tr className=" bg-slate-100">
           <td className="overflow-hidden pt-6 cliquable" colSpan={6} onClick={(e) => toggleTr(e,'tab')}>
             <span className="flex cursor-pointer justify-between uppercase text-xl font-bold">
-              <span className="px-3">Administration</span>
+              <span className="px-3">AUTOMOBILE</span>
               <span id="btn-toggle" className=" w-4 h-4 pr-3 btn-toggle mr-4"><BsFillCaretDownFill size={16} /></span>
             </span>
             <div className="mx-2 tab-component__table" id="tab">
@@ -101,80 +132,11 @@ const TableComponent: FC<TableComponentProps> = () => {
             </div>
           </td>
         </tr>
-        <tr className=" bg-slate-100">
-          <td className="overflow-hidden pt-6 cliquable" colSpan={6} onClick={(e) => toggleTr(e,'tab1')}>
-            <span className="flex cursor-pointer justify-between uppercase text-xl font-bold">
-              <span className="px-3">Informatique</span>
-              <span id="btn-toggle" className=" w-4 h-4 pr-3 btn-toggle mr-4"><BsFillCaretDownFill size={16} /></span>
-            </span>
-            <div className="mx-2 tab-component__table" id="tab1">
-              <div
-                onClick={(e) => {
-                  e.stopPropagation();
-                  console.log('tab ')
-                }}
-                className="w-full  mt-4" style={{backgroundColor: '#29517b22'}}>
-                <div className="w-full items-center flex">
-                  <span  className="p-4 rounded-tl-md w-1/6">Intelligence artificielle appliquée</span>
-                  <span  className="px-6 py-3 w-1/6">1 année</span>
-                  <span  className="px-6 py-3 w-1/6">100 998,31 FCFA</span>
-                  <span  className="px-6 py-3 w-1/6">Yaoundé - Cameroun</span>
-                  <span  className="px-6 py-3 w-1/6">20 Septembre 2022</span>
-                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
-                    <Link to='/programme/informatique' onClick={(e)=>{
-                      e.stopPropagation()
-                      console.log(e)
-                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
-                  </span>
-                </div>
-              </div>
-              <div
-                onClick={(e) => {
-                  e.stopPropagation();
-                  console.log('tab ')
-                }}
-                className="w-full  " style={{backgroundColor: '#29517b22'}}>
-                <div className="w-full items-center flex">
-                  <span  className="p-4 rounded-tl-md w-1/6">Programmation informatique</span>
-                  <span  className="px-6 py-3 w-1/6">2 années</span>
-                  <span  className="px-6 py-3 w-1/6">200 998,31 FCFA</span>
-                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
-                  <span  className="px-6 py-3 w-1/6">10 Septembre 2022</span>
-                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
-                    <Link to='/programme/informatique' onClick={(e)=>{
-                      e.stopPropagation()
-                      console.log(e)
-                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
-                  </span>
-                </div>
-              </div>
-              <div
-                onClick={(e) => {
-                  e.stopPropagation();
-                  console.log('tab ')
-                }}
-                className="w-full  " style={{backgroundColor: '#29517b22'}}>
-                <div className="w-full items-center flex">
-                  <span  className="p-4 rounded-tl-md w-1/6">informatiques - cybersécurité et réseautique</span>
-                  <span  className="px-6 py-3 w-1/6">3 années</span>
-                  <span  className="px-6 py-3 w-1/6">300 998,31 FCFA</span>
-                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
-                  <span  className="px-6 py-3 w-1/6">10 Octobre 2022</span>
-                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
-                    <Link to='/programme/informatique' onClick={(e)=>{
-                      e.stopPropagation()
-                      console.log(e)
-                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </td>
-        </tr>
+        
         <tr className=" bg-slate-100">
           <td className="overflow-hidden pt-6 cliquable" colSpan={6} onClick={(e) => toggleTr(e,'tab2')}>
             <span className="flex cursor-pointer justify-between uppercase text-xl font-bold">
-              <span className="px-3">SCIENCES DE LA SANTÉ</span>
+              <span className="px-3">PLOMBERIE</span>
               <span id="btn-toggle" className=" w-4 h-4 pr-3 btn-toggle mr-4"><BsFillCaretDownFill size={16} /></span>
             </span>
             <div className="mx-2 tab-component__table" id="tab2">
@@ -244,7 +206,7 @@ const TableComponent: FC<TableComponentProps> = () => {
         <tr className=" bg-slate-100">
           <td className="overflow-hidden pt-6 cliquable" colSpan={6} onClick={(e) => toggleTr(e,'tab3')}>
             <span className="flex cursor-pointer justify-between uppercase text-xl font-bold">
-              <span className="px-3">ÉLECTRONIQUE</span>
+              <span className="px-3">SOUDURE</span>
               <span id="btn-toggle" className=" w-4 h-4 pr-3 btn-toggle mr-4"><BsFillCaretDownFill size={16} /></span>
             </span>
             <div className="mx-2 tab-component__table" id="tab3">
@@ -294,7 +256,567 @@ const TableComponent: FC<TableComponentProps> = () => {
         <tr className=" bg-slate-100">
           <td className="overflow-hidden pt-6 cliquable" colSpan={6} onClick={(e) => toggleTr(e,'tab4')}>
             <span className="flex cursor-pointer justify-between uppercase text-xl font-bold">
-              <span className="px-3">COMMUNICATION</span>
+              <span className="px-3">FROID ET CLIMATISATION</span>
+              <span id="btn-toggle" className=" w-4 h-4 pr-3 btn-toggle mr-4"><BsFillCaretDownFill size={16} /></span>
+            </span>
+            <div className="mx-2 tab-component__table" id="tab4">
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  mt-4" style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Publicité et communication marketing</span>
+                  <span  className="px-6 py-3 w-1/6">2 année</span>
+                  <span  className="px-6 py-3 w-1/6">100 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">03 Septembre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  " style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Relations publiques</span>
+                  <span  className="px-6 py-3 w-1/6">2 années</span>
+                  <span  className="px-6 py-3 w-1/6">200 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">10 Septembre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  " style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Techniques de médias et communications numériques</span>
+                  <span  className="px-6 py-3 w-1/6">3 années</span>
+                  <span  className="px-6 py-3 w-1/6">300 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">10 Octobre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr className=" bg-slate-100">
+          <td className="overflow-hidden pt-6 cliquable" colSpan={6} onClick={(e) => toggleTr(e,'tab4')}>
+            <span className="flex cursor-pointer justify-between uppercase text-xl font-bold">
+              <span className="px-3">HÔTEL ET RESTAURATION</span>
+              <span id="btn-toggle" className=" w-4 h-4 pr-3 btn-toggle mr-4"><BsFillCaretDownFill size={16} /></span>
+            </span>
+            <div className="mx-2 tab-component__table" id="tab4">
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  mt-4" style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Publicité et communication marketing</span>
+                  <span  className="px-6 py-3 w-1/6">2 année</span>
+                  <span  className="px-6 py-3 w-1/6">100 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">03 Septembre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  " style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Relations publiques</span>
+                  <span  className="px-6 py-3 w-1/6">2 années</span>
+                  <span  className="px-6 py-3 w-1/6">200 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">10 Septembre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  " style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Techniques de médias et communications numériques</span>
+                  <span  className="px-6 py-3 w-1/6">3 années</span>
+                  <span  className="px-6 py-3 w-1/6">300 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">10 Octobre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr className=" bg-slate-100">
+          <td className="overflow-hidden pt-6 cliquable" colSpan={6} onClick={(e) => toggleTr(e,'tab4')}>
+            <span className="flex cursor-pointer justify-between uppercase text-xl font-bold">
+              <span className="px-3">RÉPARATION DES MACHINES AGRICOLES</span>
+              <span id="btn-toggle" className=" w-4 h-4 pr-3 btn-toggle mr-4"><BsFillCaretDownFill size={16} /></span>
+            </span>
+            <div className="mx-2 tab-component__table" id="tab4">
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  mt-4" style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Publicité et communication marketing</span>
+                  <span  className="px-6 py-3 w-1/6">2 année</span>
+                  <span  className="px-6 py-3 w-1/6">100 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">03 Septembre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  " style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Relations publiques</span>
+                  <span  className="px-6 py-3 w-1/6">2 années</span>
+                  <span  className="px-6 py-3 w-1/6">200 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">10 Septembre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  " style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Techniques de médias et communications numériques</span>
+                  <span  className="px-6 py-3 w-1/6">3 années</span>
+                  <span  className="px-6 py-3 w-1/6">300 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">10 Octobre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr className=" bg-slate-100">
+          <td className="overflow-hidden pt-6 cliquable" colSpan={6} onClick={(e) => toggleTr(e,'tab4')}>
+            <span className="flex cursor-pointer justify-between uppercase text-xl font-bold">
+              <span className="px-3">RÉPARATION APPAREILS ELECTRONIQUE</span>
+              <span id="btn-toggle" className=" w-4 h-4 pr-3 btn-toggle mr-4"><BsFillCaretDownFill size={16} /></span>
+            </span>
+            <div className="mx-2 tab-component__table" id="tab4">
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  mt-4" style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Publicité et communication marketing</span>
+                  <span  className="px-6 py-3 w-1/6">2 année</span>
+                  <span  className="px-6 py-3 w-1/6">100 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">03 Septembre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  " style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Relations publiques</span>
+                  <span  className="px-6 py-3 w-1/6">2 années</span>
+                  <span  className="px-6 py-3 w-1/6">200 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">10 Septembre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  " style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Techniques de médias et communications numériques</span>
+                  <span  className="px-6 py-3 w-1/6">3 années</span>
+                  <span  className="px-6 py-3 w-1/6">300 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">10 Octobre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr className=" bg-slate-100">
+          <td className="overflow-hidden pt-6 cliquable" colSpan={6} onClick={(e) => toggleTr(e,'tab4')}>
+            <span className="flex cursor-pointer justify-between uppercase text-xl font-bold">
+              <span className="px-3">ÉLECTRICITÉ GÉNÉRALISTE ET BÂTIMENT</span>
+              <span id="btn-toggle" className=" w-4 h-4 pr-3 btn-toggle mr-4"><BsFillCaretDownFill size={16} /></span>
+            </span>
+            <div className="mx-2 tab-component__table" id="tab4">
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  mt-4" style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Publicité et communication marketing</span>
+                  <span  className="px-6 py-3 w-1/6">2 année</span>
+                  <span  className="px-6 py-3 w-1/6">100 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">03 Septembre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  " style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Relations publiques</span>
+                  <span  className="px-6 py-3 w-1/6">2 années</span>
+                  <span  className="px-6 py-3 w-1/6">200 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">10 Septembre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  " style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Techniques de médias et communications numériques</span>
+                  <span  className="px-6 py-3 w-1/6">3 années</span>
+                  <span  className="px-6 py-3 w-1/6">300 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">10 Octobre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr className=" bg-slate-100">
+          <td className="overflow-hidden pt-6 cliquable" colSpan={6} onClick={(e) => toggleTr(e,'tab4')}>
+            <span className="flex cursor-pointer justify-between uppercase text-xl font-bold">
+              <span className="px-3">BUREAUTIQUE</span>
+              <span id="btn-toggle" className=" w-4 h-4 pr-3 btn-toggle mr-4"><BsFillCaretDownFill size={16} /></span>
+            </span>
+            <div className="mx-2 tab-component__table" id="tab4">
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  mt-4" style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Publicité et communication marketing</span>
+                  <span  className="px-6 py-3 w-1/6">2 année</span>
+                  <span  className="px-6 py-3 w-1/6">100 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">03 Septembre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  " style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Relations publiques</span>
+                  <span  className="px-6 py-3 w-1/6">2 années</span>
+                  <span  className="px-6 py-3 w-1/6">200 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">10 Septembre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  " style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Techniques de médias et communications numériques</span>
+                  <span  className="px-6 py-3 w-1/6">3 années</span>
+                  <span  className="px-6 py-3 w-1/6">300 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">10 Octobre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr className=" bg-slate-100">
+          <td className="overflow-hidden pt-6 cliquable" colSpan={6} onClick={(e) => toggleTr(e,'tab4')}>
+            <span className="flex cursor-pointer justify-between uppercase text-xl font-bold">
+              <span className="px-3">COUTURE</span>
+              <span id="btn-toggle" className=" w-4 h-4 pr-3 btn-toggle mr-4"><BsFillCaretDownFill size={16} /></span>
+            </span>
+            <div className="mx-2 tab-component__table" id="tab4">
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  mt-4" style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Publicité et communication marketing</span>
+                  <span  className="px-6 py-3 w-1/6">2 année</span>
+                  <span  className="px-6 py-3 w-1/6">100 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">03 Septembre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  " style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Relations publiques</span>
+                  <span  className="px-6 py-3 w-1/6">2 années</span>
+                  <span  className="px-6 py-3 w-1/6">200 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">10 Septembre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  " style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Techniques de médias et communications numériques</span>
+                  <span  className="px-6 py-3 w-1/6">3 années</span>
+                  <span  className="px-6 py-3 w-1/6">300 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">10 Octobre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr className=" bg-slate-100">
+          <td className="overflow-hidden pt-6 cliquable" colSpan={6} onClick={(e) => toggleTr(e,'tab4')}>
+            <span className="flex cursor-pointer justify-between uppercase text-xl font-bold">
+              <span className="px-3">MECANIQUE</span>
+              <span id="btn-toggle" className=" w-4 h-4 pr-3 btn-toggle mr-4"><BsFillCaretDownFill size={16} /></span>
+            </span>
+            <div className="mx-2 tab-component__table" id="tab4">
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  mt-4" style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Publicité et communication marketing</span>
+                  <span  className="px-6 py-3 w-1/6">2 année</span>
+                  <span  className="px-6 py-3 w-1/6">100 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">03 Septembre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  " style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Relations publiques</span>
+                  <span  className="px-6 py-3 w-1/6">2 années</span>
+                  <span  className="px-6 py-3 w-1/6">200 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">10 Septembre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  console.log('tab ')
+                }}
+                className="w-full  " style={{backgroundColor: '#29517b22'}}>
+                <div className="w-full items-center flex">
+                  <span  className="p-4 rounded-tl-md w-1/6">Techniques de médias et communications numériques</span>
+                  <span  className="px-6 py-3 w-1/6">3 années</span>
+                  <span  className="px-6 py-3 w-1/6">300 998,31 FCFA</span>
+                  <span  className="px-6 py-3 w-1/6">Douala - Cameroun</span>
+                  <span  className="px-6 py-3 w-1/6">10 Octobre 2022</span>
+                  <span  className="px-6 py-3 w-1/6 rounded-tr-md">
+                    <Link to='/programme/informatique' onClick={(e)=>{
+                      e.stopPropagation()
+                      console.log(e)
+                    }} className="px-4 py-2 rounded-md bg-orange-400 text-white">commencer</Link>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr className=" bg-slate-100">
+          <td className="overflow-hidden pt-6 cliquable" colSpan={6} onClick={(e) => toggleTr(e,'tab4')}>
+            <span className="flex cursor-pointer justify-between uppercase text-xl font-bold">
+              <span className="px-3">BEAUTE</span>
               <span id="btn-toggle" className=" w-4 h-4 pr-3 btn-toggle mr-4"><BsFillCaretDownFill size={16} /></span>
             </span>
             <div className="mx-2 tab-component__table" id="tab4">

@@ -14,6 +14,10 @@ import Studen2 from "../../assets/images/student_3.jpeg";
 import Studen3 from "../../assets/images/Doctor.jpeg";
 import Dev from "../../assets/images/Dev.jpeg";
 import Ingenieur from "../../assets/images/Ingenieur.jpeg";
+import fenetre from "../../assets/images/fenetre.jpeg";
+import menuisier_1 from "../../assets/images/menuserie_1.jpeg";
+import menuisier_2 from "../../assets/images/menuisier_2.jpeg";
+import menuisier_3 from "../../assets/images/menuisier_3.png";
 
 import "./index.scss";
 import Banner from "../../containers/Banner";
@@ -106,50 +110,75 @@ const Home: FC<HomeProps> = () => {
           </h1>
 
           <div className="flex w-full justify-between flex-wrap">
-            <CardCourse
-              title="Developpement d'application web"
-              description="Programmation informatique"
-              categorie="Informatique"
-              image={Info}
-              imgProf={Dev}
-              classColor="bg-orange-400"
-              startNumber={['2','4','4']}
-              profName="Mr Kevin"
-            />
+          <CardCourse
+                    title="Affaire civiques"
+                    description=""
+                    categorie="Menuiserie"
+                    image={fenetre}
+                    imgProf={Dev}
+                    classColor="bg-orange-400"
+                    startNumber={['2','4','4']}
+                    profName="Koto Eric"
+                  >
+                    <span className="text-xs w-full flex items-center mt-2">
+                      <span>MODES DE LIVRAISON</span> 
+                      <span className="w-0.5 h-4 bg-orange-400 inline-block mx-2"></span>
+                      <span>EN LIGNE</span>
+                    </span>
+                  </CardCourse>
 
-            <CardCourse
-              title="Finace & Investissement"
-              description="comprendre l'évolution du marché financier"
-              categorie="Finance"
-              image={Finance}
-              imgProf={Studen2}
-              classColor="bg-yellow-400"
-              statutProf="Analyste et Trader financier"
-              profName="Mme Kueya Laure"
-            />
+                  <CardCourse
+                    title="Entrepreneuriat"
+                    description=""
+                    categorie="Menuiserie"
+                    image={menuisier_1}
+                    imgProf={Dev}
+                    classColor="bg-orange-400"
+                    startNumber={['2','4','4']}
+                    profName="Mr Kevin"
+                  >
+                    <span className="text-xs w-full flex items-center mt-2">
+                      <span>MODES DE LIVRAISON</span> 
+                      <span className="w-0.5 h-4 bg-orange-400 inline-block mx-2"></span>
+                      <span>EN CLASSE</span>
+                    </span>
+                  </CardCourse>
 
-            <CardCourse
-              title="Création d'un nouveau circuit"
-              description="Techniques du génie électronique"
-              categorie="Électronique"
-              image={Electro}
-              imgProf={Ingenieur}
-              classColor="bg-violet-400"
-              statutProf="Ingénieur mécanique"
-              profName="Mr Soufo bertrand"
-            />
+                  <CardCourse
+                    title="conception autonome (par chaque commerce)"
+                    description=""
+                    categorie="Menuiserie"
+                    image={menuisier_2}
+                    imgProf={Dev}
+                    classColor="bg-orange-400"
+                    startNumber={['2','4','4']}
+                    profName="Mr Kevin"
+                    >
+                    <span className="text-xs w-full flex items-center mt-2">
+                      <span>MODES DE LIVRAISON</span> 
+                      <span className="w-0.5 h-4 bg-orange-400 inline-block mx-2"></span>
+                      <span>EN LIGNE</span>
+                    </span>
+                  </CardCourse>
 
-            <CardCourse
-              title="Infirmier(e) certifier"
-              description="Soins infirmiers auxiliaires"
-              categorie="santé & Médecine"
-              image={Doctor}
-              imgProf={Studen3}
-              classColor="bg-green-400"
-              endCard={true}
-              statutProf="Medecin generaliste"
-              profName="Mr Ngo Partick"
-            />
+                  <CardCourse
+                    title="Introduction à la gestion d'un système d'exploitation"
+                    description=""
+                    categorie="Menuiserie"
+                    image={menuisier_3}
+                    imgProf={Dev}
+                    classColor="bg-orange-400"
+                    startNumber={['2','4','4']}
+                    profName="Mr Kevin"
+                    endCard={true}
+                    
+                    >
+                    <span className="text-xs w-full flex items-center mt-2">
+                      <span>MODES DE LIVRAISON</span> 
+                      <span className="w-0.5 h-4 bg-orange-400 inline-block mx-2"></span>
+                      <span>EN CLASSE</span>
+                    </span>
+                  </CardCourse>
 
           </div>
         </div>

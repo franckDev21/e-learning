@@ -5,12 +5,13 @@ import { ImSearch } from 'react-icons/im';
 import { IoSchoolSharp } from 'react-icons/io5';
 import { ImBook } from 'react-icons/im';
 import { GrPersonalComputer } from 'react-icons/gr';
-import { AiOutlineAndroid,AiOutlineComment,AiFillSound } from 'react-icons/ai';
-import { FaDesktop } from 'react-icons/fa';
-import { BiBuildings } from 'react-icons/bi';
+import { AiOutlineAndroid,AiOutlineComment,AiFillSound, AiFillCar } from 'react-icons/ai';
+import { FaDesktop, FaHammer } from 'react-icons/fa';
+import { GiMetalBar } from 'react-icons/gi';
 import Logo from "../../assets/images/logo.png";
 
 import "./index.scss";
+import { MdPlumbing } from "react-icons/md";
 
 type HeaderProps = {};
 
@@ -146,40 +147,40 @@ const Header: FC<HeaderProps> = () => {
 
             <div className="header__card py-3 px-6 max-w-sm rounded-lg cursor-pointer flex items-start justify-start hover:bg-orange-100" onClick={(e) => {e.currentTarget.classList.toggle('active')}} >
               <span className="w-8 text-orange-600 h-8 bg-orange-100 rounded-full flex-none mr-3 flex justify-center items-center">
-                <FaDesktop  />
+                <FaHammer  />
               </span>
               <div className="">
-                <h1 className="text-gray-900 font-semibold mb-2">Informatique</h1>
+                <h1 className="text-gray-900 font-semibold mb-2">MENUISERIE</h1>
                 <p className="text-sm ">Apprenez un métier d’avenir grâce à des projets concrets et un mentor individuel.</p>
               </div>
             </div>
 
             <div className="header__card py-3 px-6 max-w-sm rounded-lg cursor-pointer flex items-start justify-start hover:bg-orange-100" >
               <span className="w-8 text-orange-600 h-8 bg-orange-100 rounded-full flex-none mr-3 flex justify-center items-center">
-                <AiOutlineAndroid  />
+                <AiFillCar  />
               </span>
               <div className="">
-                <h1 className="text-gray-900 font-semibold mb-2">Électronique</h1>
+                <h1 className="text-gray-900 font-semibold mb-2">AUTOMOBILE</h1>
                 <p className="text-sm ">Développez vos connaissances avec plus de 500 cours régulièrement mis à jour.</p>
               </div>
             </div>
 
             <div className="header__card py-3 px-6 max-w-sm rounded-lg cursor-pointer flex items-start justify-start hover:bg-orange-100" onClick={(e) => {e.currentTarget.classList.toggle('active')}} >
               <span className="w-8 text-orange-600 h-8 bg-orange-100 rounded-full flex-none mr-3 flex justify-center items-center">
-                <AiFillSound />
+                <MdPlumbing />
               </span>
               <div className="">
-                <h1 className="text-gray-900 font-semibold mb-2">Communication</h1>
+                <h1 className="text-gray-900 font-semibold mb-2">PLOMBERIE</h1>
                 <p className="text-sm ">Apprenez un métier d’avenir grâce à des projets concrets et un mentor individuel.</p>
               </div>
             </div>
 
             <div className="header__card py-3 px-6 max-w-sm rounded-lg cursor-pointer flex items-start justify-start hover:bg-orange-100" >
               <span className="w-8 text-orange-600 h-8 bg-orange-100 rounded-full flex-none mr-3 flex justify-center items-center">
-                <BiBuildings />
+                <GiMetalBar />
               </span>
               <div className="">
-                <h1 className="text-gray-900 font-semibold mb-2">Architecture et génie civil</h1>
+                <h1 className="text-gray-900 font-semibold mb-2">SOUDURE</h1>
                 <p className="text-sm ">Développez vos connaissances avec plus de 500 cours régulièrement mis à jour.</p>
               </div>
             </div>

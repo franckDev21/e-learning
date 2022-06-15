@@ -102,15 +102,19 @@ const CardCourse: FC<CardCourseProps> = ({
         <ul>
           <li className="flex items-center justify-start text-sm text-gray-600 mb-4 font-light">
             <span><AiOutlineCheck /></span>
-            <span className="pl-3">Durant ce cours, vous allez apprendre fondamentaux du développement web.</span>
+            <span className="pl-3">Introduction à la CAO.</span>
           </li>
           <li className="flex items-center justify-start text-sm text-gray-600 mb-4 font-light">
             <span><AiOutlineCheck /></span>
-            <span className="pl-3">Les languages de programmation : HTML , JavaScript</span>
+            <span className="pl-3">La perspective de Tracé à main levée</span>
           </li>
           <li className="flex items-center justify-start text-sm text-gray-600 mb-4 font-light">
             <span><AiOutlineCheck /></span>
-            <span className="pl-3">Créer des boucles pour parcourir chaque élément d'un dataset</span>
+            <span className="pl-3">Dessin utilisé à l'entreprise de meubles (Sketch Up logiciels 7)</span>
+          </li>
+          <li className="flex items-center justify-start text-sm text-gray-600 mb-4 font-light">
+            <span><AiOutlineCheck /></span>
+            <span className="pl-3">Titrant La pratique de l'outil (carré, carré biseau, bande règle, étriers de placage, bord droit, jauges, etc.)</span>
           </li>
         </ul>
 
