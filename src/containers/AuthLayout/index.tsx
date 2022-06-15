@@ -99,7 +99,7 @@ const AuthLayout: FC<AuthLayoutProps> = ({ children }) => {
 
             <div className="text-center flex items-center justify-center mt-6">
               <button className="mx-1 opacity-90 px-10 py-4 active:scale-95 rounded-md font-bold uppercase  bg-orange-600 text-white">
-                {mode === 'LOGIN' ? "S'inscrire" : "Se connecter"} {loard && <span className="load"></span>}
+                {mode !== 'LOGIN' ? "S'inscrire" : "Se connecter"} {loard && <span className="load"></span>}
               </button>
             </div>
           </form  >
