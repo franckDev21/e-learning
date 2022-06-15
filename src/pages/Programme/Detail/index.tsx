@@ -224,7 +224,7 @@ const ProgrameDetail: FC<ProgrameProps> = () => {
                 </div>
 
                 <div className="flex items-center mb-4">
-                  <div className="w-16 h-16 mr-4 bg-blue-500 text-white rounded-full text-4xl flex justify-center items-center font-bold">1</div>
+                  <div className="w-16 h-16 mr-4 bg-blue-500 text-white rounded-full text-4xl flex justify-center items-center font-bold">2</div>
                   <div className="flex flex-col justify-start items-start">
                     <h1 className="text-3xl uppercase font-extrabold" style={{color: '#003667'}}> ÉTAPE 2 </h1>
                     <span className="block w-10/12 h-0.5 bg-gray-200"></span>
