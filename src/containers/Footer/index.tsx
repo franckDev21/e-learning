@@ -8,7 +8,7 @@ const Footer: FC<FooterProps> = () => {
       <div className="container mx-auto flex justify-between items-start pt-4">
 
       <ul>
-        <li className="uppercase font-semibold mb-3">Digital College</li>
+        <li className="uppercase font-semibold mb-3">NAT UNIV</li>
         <li className="py-2 text-slate-100 opacity-90 font-light">Qui sommes-nous ?</li>
         <li className="py-2 text-slate-100 opacity-90 font-light">Financements</li>
         <li className="py-2 text-slate-100 opacity-90 font-light">Expérience de formation</li>

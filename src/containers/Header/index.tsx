@@ -6,7 +6,7 @@ import { IoSchoolSharp } from 'react-icons/io5';
 import { ImBook } from 'react-icons/im';
 import { GrPersonalComputer } from 'react-icons/gr';
 import { AiOutlineAndroid,AiOutlineComment,AiFillSound, AiFillCar } from 'react-icons/ai';
-import { FaDesktop, FaHammer } from 'react-icons/fa';
+import { FaComments, FaDesktop, FaHammer, FaUserAlt } from 'react-icons/fa';
 import { GiMetalBar } from 'react-icons/gi';
 import Logo from "../../assets/images/logo.png";
 
@@ -104,7 +104,7 @@ const Header: FC<HeaderProps> = () => {
         <div className="container mx-auto pt-4 pb-10 flex">
           <div className="w-1/4">
             <div className="text-gray-900 font-bold text-3xl">Nos formations</div>
-            <span className="text-sm text-gray-400">100% en ligne et à votre rythme.</span>
+            <span className="text-sm text-gray-400">Apprentissage en presentiel et en distanciel, à votre rythme.</span>
           </div>
           <div className="ml-5 grid grid-cols-2 gap-4 justify-start items-center">
 

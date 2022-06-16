@@ -18,6 +18,7 @@ import fenetre from "../../assets/images/fenetre.jpeg";
 import menuisier_1 from "../../assets/images/menuserie_1.jpeg";
 import menuisier_2 from "../../assets/images/menuisier_2.jpeg";
 import menuisier_3 from "../../assets/images/menuisier_3.png";
+import Jolie from "../../assets/images/banner_2.jpeg";
 
 import "./index.scss";
 import Banner from "../../containers/Banner";
@@ -195,9 +196,9 @@ const Home: FC<HomeProps> = () => {
                   <img src={Studen1} className='absolute w-full object-cover h-full top-0 left-0 right-0 bottom-0' alt="profil" />
                 </div>
                 <h1 className="font-semibold pt-10">Luvic Dible</h1>
-                <span className="text-gray-400 font-light">/ Designer ,Manchester</span>
+                <span className="text-gray-400 font-light">/ Designer ,Douala</span>
 
-                <h2 className="text-lg font-semibold mt-4" style={{color: '#003667'}}>Great quality !</h2>
+                <h2 className="text-lg font-semibold mt-4" style={{color: '#003667'}}>Excellente Qualité !</h2>
 
                 <p className="py-4 text-gray-400 font-light">
                 Une équipe compétente, dynamique et réactive ; toujours à l'écoute et d'un grand professionnalisme. Avec Nat Univ, vous êtes garanti D'être un proffesionnel	
@@ -205,15 +206,15 @@ const Home: FC<HomeProps> = () => {
               </div>
             </div>
 
-            <div className="mr-10 w-1/3 rounded-md p-4 relative bg-gray-100">
+            <div className="mr-10 w-1/3 rounded-md p-4 relative bg-gray-100"> sd
               <div className="mb-2">
                 <div className="w-16 h-16 bg-gray-100 rounded-full overflow-hidden left-10 absolute top-0 -translate-y-1/2  shadow-md">
-                  <img src={Studen2} className='absolute w-full object-cover h-full top-0 left-0 right-0 bottom-0' alt="profil" />
+                  <img src={Jolie} className='absolute w-full object-cover h-full top-0 left-0 right-0 bottom-0' alt="profil" />
                 </div>
                 <h1 className="font-semibold pt-10">Luvic Dible</h1>
-                <span className="text-gray-400 font-light">/ Designer ,Manchester</span>
+                <span className="text-gray-400 font-light">/ Designer ,Douala</span>
 
-                <h2 className="text-lg font-semibold mt-4" style={{color: '#003667'}}>Great quality !</h2>
+                <h2 className="text-lg font-semibold mt-4" style={{color: '#003667'}}>Excellente Qualité !</h2>
 
                 <p className="py-4 text-gray-400 font-light">
                 Très à l’écoute de mes besoins, Nat Univ a ensuite en moi le désir et la passion d'un bon développeur . Merci Nat Univ
@@ -227,12 +228,12 @@ const Home: FC<HomeProps> = () => {
                   <img src={Belle} className='absolute w-full object-cover h-full top-0 left-0 right-0 bottom-0' alt="profil" />
                 </div>
                 <h1 className="font-semibold pt-10">Luvic Dible</h1>
-                <span className="text-gray-400 font-light">/ Designer ,Manchester</span>
+                <span className="text-gray-400 font-light">/ Designer ,Douala</span>
 
-                <h2 className="text-lg font-semibold mt-4" style={{color: '#003667'}}>Great quality !</h2>
+                <h2 className="text-lg font-semibold mt-4" style={{color: '#003667'}}>Excellente Qualité !</h2>
 
                 <p className="py-4 text-gray-400 font-light">
-                  I wanted to place a review since their support helped me within a day or so, which is nice! Thanks and 5 stars!				
+                Je tenais à donner mon avis sur ce produit, car le service d'assistance m'a aidé en l'espace d'un jour environ, ce qui est appréciable ! Merci et 5 étoiles !				
                 </p>
               </div>
             </div>
