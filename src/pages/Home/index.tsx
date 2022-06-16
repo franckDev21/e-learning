@@ -20,6 +20,7 @@ import menuisier_2 from "../../assets/images/menuisier_2.jpeg";
 import menuisier_3 from "../../assets/images/menuisier_3.png";
 import Jolie from "../../assets/images/banner_2.jpeg";
 
+
 import "./index.scss";
 import Banner from "../../containers/Banner";
 import CardCourse from "../../components/CardCourse";
@@ -32,6 +33,12 @@ const Home: FC<HomeProps> = () => {
       <Banner showSubBanner={true} />
       
       <div className="bg-white py-20 about-section">
+       {/* <div className="video-wrapper">
+       <video width="100%" height="100%"  preload='auto'>
+        <source src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4 type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+       </div> */}
         <div className="container mx-auto flex items-center justify-center">
           <div className="text-center max-w-md flex flex-col justify-center items-center my-3">
             <div className="relative about-section__img overflow-hidden w-60 h-60  rounded-full">

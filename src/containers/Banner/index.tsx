@@ -17,7 +17,9 @@ const Banner: FC<BannerProps> = ({left,right,showSubBanner = false}) => {
   return (
     <Fragment>
       <div className="banner flex justify-start responsive  py-24  items-center">
-      
+        <video loop muted className="wrapper__video">
+            <source src="https://www.youtube.com/watch?v=8MgpE2DTTKA" />
+        </video> 
         {!left && <img src={Jolie} className="w-full absolute z-10 left-0 bottom-0 right-0 h-full object-cover" alt="" />}
 
         {!left && 
@@ -47,6 +49,7 @@ const Banner: FC<BannerProps> = ({left,right,showSubBanner = false}) => {
 
       </div>
       {showSubBanner && <div className="bg-primary-l">
+        
         <div className="container mx-auto py-6 text-white flex justify-between items-center">
 
           <div className="flex items-center justify-center">
