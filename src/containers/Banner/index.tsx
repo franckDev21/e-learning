@@ -18,12 +18,12 @@ const Banner: FC<BannerProps> = ({left,right,showSubBanner = false}) => {
   return (
     <Fragment>
       <div className="banner flex justify-start responsive overflow-hidden relative  py-24  items-center">
-        <div className="banner__overly"></div>
-        <div  className="video-wrapper">
+        {/* <div className="banner__overly"></div> */}
+        {/* <div  className="video-wrapper">
           <video className="video-wrapper__video z-20" width="100%" muted autoPlay={true} loop >
             <source src={Video} type="video/mp4" />
           </video>
-        </div>
+        </div> */}
         {!left && <img src={Jolie} className="w-full absolute z-10 left-0 bottom-0 right-0 h-full object-cover" alt="" />}
 
         {!left && 
