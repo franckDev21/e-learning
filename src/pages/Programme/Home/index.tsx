@@ -19,7 +19,7 @@ const Programes: FC<Programes> = () => {
         left={
           <>
             <img src={Jolie} className="w-full absolute z-10 left-0 bottom-0 right-0 h-full object-cover" alt="" />
-            <div className="container mx-auto relative z-20 py-10 text-4xl leading font-extrabold ">
+            <div className="container mx-auto relative z-20 py-10 text-4xl leading font-extrabold " style={{zIndex: 1004}}>
               <span style={{color: '#003667'}} className='bg-white px-6 inline-block py-2'>DÉCOUVRE NOS</span> <br />
               <span style={{color: '#003667'}} className='bg-white px-6 inline-block pb-2'>PROGRAMMES</span>
             </div>

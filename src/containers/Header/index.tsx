@@ -6,7 +6,7 @@ import { IoSchoolSharp } from 'react-icons/io5';
 import { ImBook } from 'react-icons/im';
 import { GrPersonalComputer } from 'react-icons/gr';
 import { AiOutlineAndroid,AiOutlineComment,AiFillSound, AiFillCar } from 'react-icons/ai';
-import { FaComments, FaDesktop, FaHammer, FaUserAlt } from 'react-icons/fa';
+import { FaComments, FaDesktop, FaHammer, FaUserAlt, FaUserCircle } from 'react-icons/fa';
 import { GiMetalBar } from 'react-icons/gi';
 import Logo from "../../assets/images/logo.png";
 
@@ -24,6 +24,8 @@ const Header: FC<HeaderProps> = () => {
 
   const [showProgrammeOverline,setShowProgrammeOverline] = useState(false);
   const overlyProgrammeHeaderRef = useRef(null);
+
+  const [isAuthenticated,setIsAuthenticated] = useState(false);
 
   const showOverlyFormations = () => {
 
@@ -90,11 +92,17 @@ const Header: FC<HeaderProps> = () => {
         <div className="flex items-center  w-1/2 justify-end">
 
           {showSearchBar && <div className="bg-gray-100 rounded-md  w-3/5 mr-3">
-            <input type="text" placeholder="Rechercher un cour ou une formation ..." className="px-3 py-2 w-full rounded-md  h-auto bg-transparent focus:ring-1  focus:border-1 focus:ring-orange-400 focus:outline-none" />
+            <input  type="text" placeholder="Rechercher un cour ou une formation ..." className="px-3 py-2 w-full rounded-md  h-auto bg-transparent focus:ring-1  focus:border-1 focus:ring-orange-400 focus:outline-none" />
           </div>}
 
-          <span onClick={() => setShowSearchBar(step => !step)} className="cursor-pointer"><ImSearch size={23} /></span>
-          <Link to='/auth' className="ml-6 transition-all hover:bg-orange-50 px-4 py-2 rounded-md uppercase text-sm font-semibold border-2 border-orange-400 text-orange-500">se connecter</Link>
+          <span onClick={() => {setShowSearchBar(step => !step)}} className="cursor-pointer"><ImSearch size={23} /></span>
+          
+          {isAuthenticated ?
+            <div className=" w-40 h-10 rounded-md bg-gray-200 shadow-md">
+              <span><FaUserCircle /></span>
+            </div> :
+            <Link to='/auth' className="ml-6 transition-all hover:bg-orange-50 px-4 py-2 rounded-md uppercase text-sm font-semibold border-2 border-orange-400 text-orange-500">se connecter</Link> 
+          }
         </div>
       </div>
 

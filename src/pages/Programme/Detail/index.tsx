@@ -29,7 +29,7 @@ const ProgrameDetail: FC<ProgrameProps> = () => {
       <Banner left={
         <>
           <img src={BannerImg} className="w-full absolute z-10 left-0 bottom-0 right-0 h-full object-cover" alt=""  />
-          <div className="container mx-auto relative z-20 py-10 text-5xl leading font-extrabold ">
+          <div style={{zIndex: 1004}} className="container mx-auto relative z-20 py-10 text-5xl leading font-extrabold ">
             <span style={{color: '#003667'}} className='bg-white px-6 inline-block py-2'>{name}</span> <br />
           </div>
         </>
